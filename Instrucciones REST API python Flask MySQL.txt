@@ -1,0 +1,69 @@
+CREACIÓN DE UNA REST API con Python, Flask y MySql en un EV 
+ARQUITECTURA CLIENTE - SERVIDOR
+
+Creamos una carpeta con el nombre de nuestro proyecto y la abrimos con el editor de nuestro gusto
+Seguido dentro del editor abrimos una nueva terminal para la creación del entorno virtual
+
+virtualenv -p python3 env <--"Este es el nombre de nuestro EV"
+
+Ahora activamos nuestro entorno virtual
+
+.\env\Scripts\activate
+
+Conocemos nuestros recursos digitando
+
+pip list
+
+Ahora instalamos flask y los paquetes que necesitamos
+
+pip install flask flask_mysqldb
+
+De nuevo si presionamos pip list deberiamos ver algo asi:
+
+------------- -------
+click         8.0.4
+colorama      0.4.4
+Flask         2.0.3
+Flask-MySQLdb 1.0.1
+itsdangerous  2.1.0
+Jinja2        3.0.3
+MarkupSafe    2.1.0
+mysqlclient   2.1.0
+pip           22.0.4
+setuptools    60.9.3
+Werkzeug      2.0.3
+wheel         0.37.1
+
+Creamos una nueva carpeta llamada src y dentro de ella el archivo app.py
+Dentro de este crearemos nuestro servidor así:
+
+from flask import Flask
+
+app = Flask(__name__)#Con este parametro comprobamos si se ejecuta este archivo como el principal
+@app.route('/') #preestablecemos la ruta raiz
+def index(): # Renderizamos el index
+    return "Soy TdeA"
+if __name__=='__main__':#Se hace la comprobación
+    app.run()# DSi es así ejecutamos la app mediante el método run
+
+Luego comprobamos por terminal así : python .\src\app.py
+Esto debería lanzar nuestra app al servidor así:
+
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+
+Comprobamos que funciona vistando la dirección del servidor
+
+Podemos mejorar nuestro código creando un archivo de configuracion independiente
+
+
+
+
+
+
+	
+
