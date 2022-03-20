@@ -4,6 +4,8 @@ ARQUITECTURA CLIENTE - SERVIDOR
 Creamos una carpeta con el nombre de nuestro proyecto y la abrimos con el editor de nuestro gusto
 Seguido dentro del editor abrimos una nueva terminal para la creación del entorno virtual
 
+Cuando abre la carpeta en code, instala el entorno virtual de la sigueinte forma  pip install virtualenv
+
 virtualenv -p python3 env <--"Este es el nombre de nuestro EV"
 
 Ahora activamos nuestro entorno virtual
