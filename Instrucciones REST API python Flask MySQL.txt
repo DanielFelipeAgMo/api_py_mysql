@@ -4,6 +4,8 @@ ARQUITECTURA CLIENTE - SERVIDOR
 Creamos una carpeta con el nombre de nuestro proyecto y la abrimos con el editor de nuestro gusto
 Seguido dentro del editor abrimos una nueva terminal para la creación del entorno virtual
 
+Cuando abramnos el interpretador de codigo nos dirigimos a la carpeta que creamos de la siguiente forma cd ( la direccion ) o dir para saber donde se encuentran
+
 virtualenv -p python3 env <--"Este es el nombre de nuestro EV"
 
 Ahora activamos nuestro entorno virtual
@@ -45,7 +47,8 @@ def index(): # Renderizamos el index
     return "Soy TdeA"
 if __name__=='__main__':#Se hace la comprobación
     app.run()# DSi es así ejecutamos la app mediante el método run
-
+    
+Nos dirigimos a la carpeta de env, con el siguiente comando cd env y 
 Luego comprobamos por terminal así : python .\src\app.py
 Esto debería lanzar nuestra app al servidor así:
 
